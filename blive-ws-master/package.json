@@ -1,0 +1,27 @@
+{
+  "name": "blive-ws",
+  "version": "2.0.0",
+  "repository": "git@github.com:champkeh/blive-ws.git",
+  "author": "champkeh <champion.ge@gmail.com>",
+  "description": "B站直播间 WebSocket 服务，可用于实时获取直播间弹幕",
+  "keywords": [
+    "danmaku",
+    "B站弹幕",
+    "直播间弹幕",
+    "弹幕抓取",
+    "弹幕游戏",
+    "B站WebSocket"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dev:server": "deno run -A src/backend/server.ts",
+    "dev:front": "vite src/frontend",
+    "dev": "run-p dev:server dev:front",
+    "dep": "pnpm i && pnpm --prefix src/frontend i",
+    "build": "vite build src/frontend"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "vite": "^5.0.12"
+  }
+}
