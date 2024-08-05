@@ -37,11 +37,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-<<<<<<< HEAD
-          project: blive
-          entrypoint: src/backend/server.ts
-=======
           project: "blive-irises"
           entrypoint: "src/backend/server.ts"
           root: "dist"
->>>>>>> 915b437b632dec31de3caac324a6ee60449aaa82
